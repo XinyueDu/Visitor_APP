@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	">
+  <display-name></display-name>	
+  
+    <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.server.Login</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>register</servlet-name>
+    <servlet-class>com.server.register</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Base</servlet-name>
+    <servlet-class>com.databaseCon.Base</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Base</servlet-name>
+    <url-pattern>/Base</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Basedata</servlet-name>
+    <servlet-class>com.databaseCon.Basedata</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Basedata</servlet-name>
+    <url-pattern>/Basedata</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Userinfo</servlet-name>
+    <servlet-class>com.databaseCon.Userinfo</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Userinfo</servlet-name>
+    <url-pattern>/Userinfo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>UserinfoBase</servlet-name>
+    <servlet-class>com.databaseCon.UserinfoBase</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UserinfoBase</servlet-name>
+    <url-pattern>/UserinfoBase</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>Userinfodata</servlet-name>
+    <servlet-class>com.databaseCon.Userinfodata</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Userinfodata</servlet-name>
+    <url-pattern>/Userinfodata</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>Message</servlet-name>
+    <servlet-class>com.databaseCon.Message</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Message</servlet-name>
+    <url-pattern>/Message</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>MessageBase</servlet-name>
+    <servlet-class>com.databaseCon.MessageBase</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MessageBase</servlet-name>
+    <url-pattern>/MessageBase</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>MessageData</servlet-name>
+    <servlet-class>com.databaseCon.MessageData</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>MessageData</servlet-name>
+    <url-pattern>/MessageData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>getMessage</servlet-name>
+    <servlet-class>com.server.getMessage</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>getMessage</servlet-name>
+    <url-pattern>/getMessage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>Contact</servlet-name>
+    <servlet-class>com.databaseCon.Contact</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/Contact</url-pattern>
+  </servlet-mapping>
+ 
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>ContactBase</servlet-name>
+    <servlet-class>com.databaseCon.ContactBase</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ContactBase</servlet-name>
+    <url-pattern>/ContactBase</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+   <servlet-name>ContactData</servlet-name>
+    <servlet-class>com.databaseCon.ContactData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ContactData</servlet-name>
+    <url-pattern>/ContactData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getContact</servlet-name>
+    <servlet-class>com.server.getContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getContact</servlet-name>
+    <url-pattern>/getContact</url-pattern>
+  </servlet-mapping> 
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getVisitorsRecord</servlet-name>
+    <servlet-class>com.server.getVisitorsRecord</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getVisitorsRecord</servlet-name>
+    <url-pattern>/getVisitorsRecord</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AccessInfo</servlet-name>
+    <servlet-class>com.server.AccessInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccessInfo</servlet-name>
+    <url-pattern>/AccessInfo</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AccessInfoBase</servlet-name>
+    <servlet-class>com.server.AccessInfoBase</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccessInfoBase</servlet-name>
+    <url-pattern>/AccessInfoBase</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AccessInfoData</servlet-name>
+    <servlet-class>com.server.AccessInfoData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccessInfoData</servlet-name>
+    <url-pattern>/AccessInfoData</url-pattern>
+  </servlet-mapping>
+   
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getAccessInfo</servlet-name>
+    <servlet-class>com.server.getAccessInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAccessInfo</servlet-name>
+    <url-pattern>/getAccessInfo</url-pattern>
+  </servlet-mapping> 
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAccess</servlet-name>
+    <servlet-class>com.database.UserAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAccess</servlet-name>
+    <url-pattern>/UserAccess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAccessBase</servlet-name>
+    <servlet-class>com.database.UserAccessBase</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAccessBase</servlet-name>
+    <url-pattern>/UserAccessBase</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserAccessData</servlet-name>
+    <servlet-class>com.database.UserAccessData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserAccessData</servlet-name>
+    <url-pattern>/UserAccessData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>blindAccess</servlet-name>
+    <servlet-class>com.server.blindAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>blindAccess</servlet-name>
+    <url-pattern>/blindAccess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>getAccess</servlet-name>
+    <servlet-class>com.server.getAccess</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getAccess</servlet-name>
+    <url-pattern>/getAccess</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>searchContact</servlet-name>
+    <servlet-class>com.server.searchContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchContact</servlet-name>
+    <url-pattern>/searchContact</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>addContact</servlet-name>
+    <servlet-class>com.server.addContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addContact</servlet-name>
+    <url-pattern>/addContact</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SavePic</servlet-name>
+    <servlet-class>com.server.SavePic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SavePic</servlet-name>
+    <url-pattern>/SavePic</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SendVisitorReq</servlet-name>
+    <servlet-class>com.server.SendVisitorReq</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SendVisitorReq</servlet-name>
+    <url-pattern>/SendVisitorReq</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>updataState</servlet-name>
+    <servlet-class>com.server.updataState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updataState</servlet-name>
+    <url-pattern>/updataState</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateMessageState</servlet-name>
+    <servlet-class>com.server.UpdateMessageState</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateMessageState</servlet-name>
+    <url-pattern>/UpdateMessageState</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
