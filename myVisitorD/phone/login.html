@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    
+    <head>
+        <title>
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="./css/login.css">
+    </head>
+    
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="bc-bg ub ub-ver ub-ac ub-con" data-control="FLEXBOXVER" id="Content">
+                <div class="uinput ub  tx-c bc-text-head" data-control="INPUT" id="Input">
+                                                   轻松访客
+                </div>
+                <img src="about/css/myImg/APP1.png" style="width: 256px; height:256px; margin-top:5em;">
+                <div class="uinput ub bc-border uba ub-ac" data-control="ICONINPUT" id="iconInput1">
+                    <div class="uinn fa fa-user sc-text" data-control-icon="">
+                    </div>
+                    <input placeholder="请输入手机号" type="text" class="ub-f1" data-control-scope="userid" id="userid"data-bind="value:count,events:{'keyup'}" >
+                </div>
+                <div class="uinput ub bc-border uba ub-ac" data-control="ICONINPUT" id="iconInput2">
+                    <div class="uinn fa sc-text fa-qrcode, fa-lock" data-control-icon="">
+                    </div>
+                    <input placeholder="请输入密码" type="password" class="ub-f1" data-control-scope="password" id="password">
+                </div>
+                <div class="button ub ub-ac bc-text-head ub-pc bc-btn" id="Button1">登录</div>
+                <div class="button ub ub-ac bc-text-head ub-pc bc-btn" id="Button2">注册</div>
+
+            </div>
+        </div>
+        <script src="js/appcan.js">
+        </script>
+        <script src="js/appcan.control.js">
+        </script>
+        <script src="js/appcan.scrollbox.js">
+        </script>
+        <script src="js/template.import.js">
+        </script>
+        <!-- <script src="./assets/mvvm/login.js">
+        </script> -->
+        <script src="./js/login.js">
+        </script>    
+        
+        
+    </body>
+
+</html>

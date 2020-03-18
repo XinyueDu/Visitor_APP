@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="re/css/re.css">
+    </head>
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="ub-img1 icon-left ulev2" id="registerback">
+                        </div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">注册</h1>
+                    <div class="nav-btn" id="nav-right">
+                        <div class="fa  fa-1g  ub-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ub ub-ver ub-ac ub-con bc-bg" data-control="FLEXBOXVER" id="ContentFlexVer">
+<div class="ub ub-ver  ub-fh uinn-4a">
+    <div class="uinn-a1">
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac">
+                <div class="ulev-app1 umw4">
+                     账户
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                        <input placeholder="输入手机号" type="text" class="ub-f1" id="userid">
+                    </div>
+                </div>
+            </div>
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+               姓名     
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                        <input placeholder="Jack" type="text" class="ub-f1" id="username">
+                    </div>
+                </div>
+            </div>
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    密码
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                        <input placeholder="请输入密码" type="password" class="ub-f1" id="password">
+                    </div>
+                </div>
+            </div>
+            <div class="uba b-gra3 uc-a1 c-wh ub uinn-a7 ub-ac umar-at1">
+                <div class="ulev-app1 umw4">
+                    邮箱
+                </div>
+                <div class="ub ub-ac umh5 ub-f1">
+                    <div class="uinput ub ub-f1">
+                        <input placeholder="2296045604@qq.com " type="text" class="ub-f1" id="emil">
+                    </div>
+                </div>
+            </div>
+            <div class="ub ub-ver">
+                <div class="ub ub-pe uinn-a6 ulev-4">
+                    <div class="sc-text">
+                        我同意
+                    </div>
+                    <div class="sc-text-active">
+                        用户服务协议
+                    </div>
+                </div>
+                <div class="">
+                   <div class="button ub ub-ac bc-text-head ub-pc bc-btn" id="submit1">注册</div>
+                   <div class="button ub ub-ac bc-text-head ub-pc bc-btn" id="submit2">取消</div>
+                </div>
+            </div>
+        </div></div>
+        <div class="uinn-4b"></div>
+        </div>
+        </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+		<script src="js/appcan.listview.js"></script>
+		<script src="js/appcan.optionList.js"></script>
+		<script src="js/appcan.slider.js"></script>
+		<script src="js/appcan.tab.js"></script>
+		<script src="js/appcan.treeview.js"></script>
+        <script src="re/js/re.js"></script>
+         <script>
+         appcan.button("#submit2,#registerback", "ani-act", function() {
+            appcan.window.open({
+                name:'lo',
+                data:'login.html',
+                aniId:1,
+                animDuration:500  
+            });
+           })
+            </script>
+             <script>
+             appcan.button("#submit1", "ani-act", function() {
+                 register();
+             })
+            </script>
+            <script>
+             function register(){
+                 var userids =$("#userid").val();
+                 var usernames=$("#username").val()
+                 var passwords =$("#password").val();
+                 var emils=$("#emil").val()
+                 
+                 var sendData={
+                        userid:userids,
+                        username:usernames,
+                        password:passwords,
+                        emil:emils
+                 };
+             appcan.ajax({
+              url:"http://192.168.43.126:8080/VisitorApp/register", 
+              type:'post',
+              data:sendData,
+              contentType : "application/json",
+              dataType:"json",
+              success:function(data){
+                     appcan.window.alert("注册成功","","确认","");
+                     // appcan.window.openToast("注册成功","3000",5,0);
+                     
+             },
+             error:function(xhr,status,errMessage) {
+               appcan.window.openToast("ajax error","3000",5,0);
+               }
+           })
+           }
+                //appcan.window.alert("手机号或密码错误","3000",1,0);
+            </script>
+    </body>
+</html>

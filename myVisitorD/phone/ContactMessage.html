@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="ContactMessage/css/ContactMessage.css">
+    </head>
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="ub-img1 icon-left ulev2" id="ContactMessageback">
+                        </div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">联系人详情</h1>
+                    <div class="nav-btn" id="nav-right">
+                        <div class="fa  fa-1g  ub-img1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="" data-control="CONTENT" id="ScrollContent">
+                <div class="scrollbox">
+                    <div class="box_bounce ub ub-ver ub-pc">
+                        <div class="ub-f1"></div>
+                        <div class="bounce_status">
+                            下拉更新......
+                        </div>
+                        <div class="bounce_status">
+                            松手更新......
+                        </div>
+                        <div class="bounce_status">
+                            更新中......
+                        </div>
+                    </div>
+                   </div>
+                   <div id="listviews"  class="ubt bc-border sc-bg"></div>
+                        <div class="ub umar-t-ec3">
+                            <div class="ub ub-ver ub-ac ub-pc ">
+                                <div class="ub-img uwh-bg imgBg umar-r-ect psize" id="takePhoto" onclick="uexCamera.open();">
+                                    <img style="min-width:100%;max-width:100%;height:auto;widht:8em;height:10em;display:block;" src="" id="showPic" /></div>
+                               <div class="ulev-1 umar-t">照片</div>
+                                       
+                            </div>
+                             <div class="ub ub-ver ub-ac ub-pc">
+                                <div class="ub-img uwh-bg imgBg umar-r-ect psize" id="takevedio" onclick="uexVideo.record();">
+                                    <img style="min-width:100%;max-width:100%;height:auto;widht:8em;height:10em;display:block;" src="" id="showVid" />
+                                </div>
+                                       <div class="ulev-1 umar-t">视频</div>
+                            </div>
+                        </div>
+                                 <div class="uinn-a7">
+                                <ul  class=" ubb ub bc-border bc-text ub-ac uinn ">
+                                    <li class="ub-f1 ut-s  tx-l ulev-1">
+                                                                                                  拜访事由：
+                                    </li>
+                                    <li class="tx-r t-blu ulev-app1 ub-ae">
+                                        <div class="uinput uinn4 umar-r">
+                                            <input placeholder="请输入内容" type="text" class="tx-r" id="inreason">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul  class=" ubb ub bc-border bc-text ub-ac uinn">
+                                    <li class="ub-f1 ut-s tx-l ulev-1">
+                                                                                                     手机号：
+                                    </li>
+                                    <li class="tx-r t-blu ulev-app1 ub-ae">
+                                        <div class="uinput uinn4">
+                                            <input placeholder="请输入内容" type="text" class="tx-r " id="tel">
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul  class=" ubb ub bc-border bc-text ub-ac uinn">
+                                    <li class="ub-f1 ut-s  tx-l ulev-1">
+                                                                                               时间：
+                                    </li>
+                                    <li class="tx-r t-blu ulev-app1 ub-ae">
+                                        <div class="uinput uinn4">
+                                            <input placeholder="请输入内容" type="text" class="tx-r "id="time">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="uba bc-border uinput ub ub-f1 umar-a">
+                    <textarea placeholder="备注：" type="text" class="ub-f1" id="comments"></textarea>
+                      </div>
+                      <div class="ub ub-f1 ub-ac">
+                        <div class="button ub ub-ac bc-text-head ub-pc bc-btn " id="Button11">发起访问</div>
+                        <div class="button ub ub-ac bc-text-head ub-pc bc-btn" id="Button22">取消</div>
+                      </div> 
+            </div>
+        </div>
+        
+        <script src="js/zy_anim.js">
+        </script>
+        <script src="js/zy_control.js">
+        </script>
+        <script src="js/zy_tmpl.js">
+        </script>
+        <script src="js/zy_click.js">
+        </script>
+        
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+		<script src="js/appcan.listview.js"></script>
+		<script src="js/appcan.optionList.js"></script>
+		<script src="js/appcan.slider.js"></script>
+		<script src="js/appcan.tab.js"></script>
+		<script src="js/appcan.treeview.js"></script>
+        <script src="ContactMessage/js/ContactMessage.js"></script>   
+ <script>  
+    appcan.button("#ContactMessageback,#Button22", "ani-act", function() { 
+            appcan.window.open({
+                name:'contact',
+                data:'contact.html',
+               // aniId:2,
+                //animDuration:500
+            });
+       })
+    
+    
+ </script>
+
+    </body>
+</html>

@@ -1,0 +1,44 @@
+#Page {
+	background-color:rgba(153,201,245,1);
+}
+#Content {
+	background-color:rgba(153,201,245,1);
+	left:0em;
+	top:0em;
+
+	border-style:none;
+}
+#Input {
+	top:180px;
+	font-size: 80px;
+	
+}
+#iconInput1 {
+	left:0.31em;
+	top:4em;
+	width:14.06em;
+	border-style:ridge;
+	border-color:rgba(0,41,255,1);
+}
+#iconInput2 {
+	left:0.38em;
+	top:5em;
+	width:14.06em;
+	border-color:rgb(0,41,255);
+	border-style:ridge;
+}
+#Button1 {
+	left:-2.50em;
+	top:6em;
+	width:3.13em;
+	border-radius:6px;
+	height:0.50em;
+}
+#Button2 {
+	left:3.75em;
+	top:3.8em;
+	width:3.13em;
+	border-radius:6px;
+	border-style:none;
+	height:0.50em;
+}

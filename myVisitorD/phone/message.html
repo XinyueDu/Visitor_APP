@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="message/css/message.css">
+    </head>
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="ub-img1 ulev2 " id='timg'>
+                            <img src='./message/Image/t33.png' width="100%",height="100%" id="image1">
+                        </div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">消息</h1>
+                    <div class="nav-btn" id="nav-right">
+                        <div class="fa  fa-1g  icon-add ub-img1" >
+                        </div>
+                    </div>
+                </div>
+            </div>   
+ <div class="" data-control="CONTENT" id="ScrollContent">
+  <div class="scrollbox">
+    <div class="box_bounce ub ub-ver ub-pc">
+      <div class="ub-f1">
+      </div>
+      <div class="bounce_status">下拉更新......</div>
+      <div class="bounce_status">松手更新......</div>
+      <div class="bounce_status">更新中......</div>
+    </div>
+      
+      <div id="listview"  class="ubt bc-border sc-bg " style="list-style: 0px" >
+    </div>
+     <div id="list" style="padding-top:0.3em"></div>
+
+    </div>
+    </div> 
+    <div class="uh bc-head  ubb bc-border"data-control="FOOTER" id="footer">
+    <div id="tabview" class="uf sc-bg ubt sc-border-tab"> </div>   
+    </div>
+  </div>
+  </div>
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+		<script src="js/appcan.listview.js"></script>
+		<script src="js/appcan.optionList.js"></script>
+		<script src="js/appcan.slider.js"></script>
+		<script src="js/appcan.tab.js"></script>
+		<script src="js/appcan.treeview.js"></script>
+        <script src="message/js/message.js"></script>    
+    </script>   
+ <script>
+    var tabview = appcan.tab({
+    selector : "#tabview",
+    hasIcon : true,
+    hasAnim : false,
+    hasLabel : true,
+    hasBadge : false,
+    data : [{
+        label : "消息",
+        "icon":"fa-comments"
+    }, {
+        label : "联系人",
+        "icon":"fa-group"
+    }, {
+        label : "我的",
+        "icon":"fa-github-alt"//fa-github-alt
+    }]
+});
+tabview.on("click",function(obj, index){
+    if(index==1){
+          appcan.window.close(-1);//index下标从0开始
+        appcan.window.open({
+            name:"contact",
+            data:"contact.html",
+            //aniId:2,
+            //animDuration:1000
+        })
+    }
+    else if(index==2){
+         appcan.window.close(-1);
+        appcan.window.open({
+            name:"homepage",
+            data:"homepage.html",
+            //aniId:2,
+            // animDuration:1000
+        })
+    }
+
+})
+</script>    
+
+
+
+
+<script>
+    // var lv= appcan.listview({
+    // selector : "#listview",
+    // type : "thickLine",
+    // hasIcon : true,
+    // hasAngle : false,
+    // hasSubTitle : true,
+    // multiLine : 1,
+// });
+// var stritem={
+    // title:"杜新月",
+    // describe:"访客事由",
+    // icon:"./message/Image/a1.png",
+    // subTitle:"12:05",
+    // subDescribe:"状态"};   
+//lv.set([stritem,stritem,stritem,stritem,stritem,stritem]);
+// lv.set([{
+    // title : "Jack",
+    // describe:"访问事由：",
+    // icon:"./message/Image/a1.png",
+     // subTitle:"12:05",
+     // subDescribe:"状态", 
+     // id:"1"
+     // //("#1").val(stritem);
+//     
+// }, {
+    // title : "杜新月",
+    // describe:"访问事由：",
+    // icon:"./message/Image/t1.png",
+    // subTitle:"11:20",
+    // subDescribe:"状态",
+    // id:"2"
+// },{
+ // title : "Jack",
+    // describe:"访问事由：",
+    // icon:"./message/Image/a3.png",
+    // subTitle:"12:05",
+     // subDescribe:"状态",
+    // id:"3"
+// },{
+ // title : "Jack",
+    // describe:"访问事由：",
+    // icon:"./message/Image/a4.png",
+    // subTitle:"12:05",
+     // subDescribe:"状态",
+    // id:"3"
+// },{
+     // title : "Jack",
+    // describe:"访问事由：",
+    // icon:"./message/Image/a5.png",
+    // subTitle:"12:05",
+     // subDescribe:"状态",
+    // id:"4"
+ // },{
+     // title : "Jack",
+     // describe:"访问事由：",
+    // icon:"./message/Image/a6.png",
+    // subTitle:"12:05",
+     // subDescribe:"状态",
+     // id:"5"
+// },{
+ // title : "Jack",
+    // describe:"访问事由：",
+    // icon:"./message/Image/a7.png",
+    // subTitle:"12:05",
+    // subDescribe:"状态",  id:"6"
+// ])
+// lv.on("click",function(ele,obj,curEle){
+    // //alert(obj.id);
+    // appcan.window.open({
+        // name:"VisitorMessage",
+        // data:"VisitorMessage.html"
+// });
+// })
+            //var datalist=data.data;
+            // datalist[i].title=data[i].name;
+            // datalist[i].icon='./message/Image/a1.png';
+            // datalist[i].describe=data[i].reason;
+            // datalist[i].subTitle=data[i].time;
+            // datalist[i].subDescribe=data[i].state;
+            //lv.set(datalist);
+</script> 
+    </body>
+</html>

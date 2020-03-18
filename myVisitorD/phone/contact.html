@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html class="um landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <link rel="stylesheet" href="css/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="css/ui-box.css">
+        <link rel="stylesheet" href="css/ui-base.css">
+        <link rel="stylesheet" href="css/ui-color.css">
+        <link rel="stylesheet" href="css/appcan.icon.css">
+        <link rel="stylesheet" href="css/appcan.control.css">
+        <link rel="stylesheet" href="contact/css/contact.css">
+    </head>
+    <body class="" ontouchstart>
+        <div class="bc-bg" tabindex="0" data-control="PAGE" id="Page">
+            <div class="uh bc-head  ubb bc-border" data-control="HEADER" id="Header">
+                <div class="ub">
+                    <div class="nav-btn" id="nav-left">
+                        <div class="ub-img ulev1 " id='timg1'>                                             
+                        </div>
+                    </div>
+                    <h1 class="ut ub-f1 ulev-3 ut-s tx-c" tabindex="0">联系人</h1>
+                    <div class="nav-btn" id="nav-right">
+                        <div class="ub-img1 ulev-1" id="addC" >添加</div>
+                    </div>
+                </div>
+            </div>
+
+<div class="" data-control="CONTENT" id="ScrollContent">
+  <div class="scrollbox">
+     <div class="box_bounce ub ub-ver ub-pc">
+      <div class="ub-f1">
+      </div>
+      <div class="bounce_status">下拉更新......</div>
+      <div class="bounce_status">松手更新......</div>
+      <div class="bounce_status">更新中......</div>
+     </div>
+     <div id="listview"  class="ubt bc-border sc-bg"></div>
+    </div>
+</div>
+   <div class="uh bc-head  ubb bc-border"data-control="FOOTER" id="footer">
+    <div id="tabview" class="uf sc-bg ubt sc-border-tab"> </div>   
+    </div>          
+</div>
+
+        <script src="js/appcan.js"></script>
+        <script src="js/appcan.control.js"></script>
+        <script src="js/appcan.scrollbox.js"></script>
+        <script src="js/template.import.js"></script>
+		<script src="js/appcan.listview.js"></script>
+		<script src="js/appcan.optionList.js"></script>
+		<script src="js/appcan.slider.js"></script>
+		<script src="js/appcan.tab.js"></script>
+		<script src="js/appcan.treeview.js"></script>
+        <script src="contact/js/contact.js"></script> 
+<script>
+    var tabview = appcan.tab({
+    selector : "#tabview",
+    hasIcon : true,
+    hasAnim : false,
+    hasLabel : true,
+    hasBadge : false,
+    index:1,
+    data : [{
+        label : "消息",
+        "icon":"fa-comments"
+    }, {
+        label : "联系人",
+        "icon":"fa-group"
+    }, {
+        label : "我的",
+        "icon":"fa-github-alt"//fa-github-alt
+    }]
+});
+tabview.on("click",function(obj, index){
+    if(index==2){//index下标从0开始
+        appcan.window.close(-1);
+        appcan.window.open({
+            name:"homepage",
+            data:"homepage.html",
+           // aniId:2,
+            // animDuration:1000
+        })
+    }
+      
+    else if(index==0){
+        appcan.window.close(-1);
+        appcan.window.open({
+            name:"message",
+            data:"message.html",
+            //aniId:1,
+             //animDuration:1000
+        })
+    }
+  
+    
+})
+</script>
+<script>
+  appcan.button("#addC", "ani-act", function() {
+            appcan.window.open({
+                name:'addC',
+                data:'addContact.html',
+                //aniId:2,
+                //animDuration:500
+                
+            });
+    })
+</script>            
+   
+<script>
+    // var lv = appcan.listview({
+    // selector : "#listview",
+    // type : "thickLine",
+    // hasIcon : true,
+    // hasAngle : false,
+    // hasSubTitle : true,
+    // multiLine : 1,
+// });
+// lv.set([{
+    // title : "Jack",
+    // describe:"[离线请留言]My dream@@在最美,,,",
+    // icon:"./message/Image/a1.png",
+    // subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>', 
+    // id:"1"
+//     
+// }, {
+    // title : "Mary",
+    // describe:"[离线请留言]My dream@@在最美,,,,",
+    // icon:"./message/Image/a2.png",
+    // subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>',
+    // id:"2"
+// },{
+ /*title : "dxy",
+    describe:"[离线请留言]My dream@@在最美,,,,,,",
+    icon:"./message/Image/a3.png",
+    subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>',
+    id:"3"
+},{
+ title : "Jack",
+    describe:"动态",
+    icon:"./message/Image/a4.png",
+    subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>',
+    id:"3"
+},{
+ title : "Jack",
+    describe:"动态",
+    icon:"./message/Image/a5.png",
+   
+     
+  subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>',
+    id:"4"
+},{
+ title : "Jack",
+    describe:"访问事由：",
+    icon:"./message/Image/a6.png",
+    subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>',
+    id:"5"
+},{
+ title : "Jack",
+    describe:"访问事由：",
+    icon:"./message/Image/a7.png",
+    subDescribe:'<div class="ub ulev0 sc-text">可访状态</div>',
+    id:"6"
+}
+])
+lv.on("click",function(ele,obj,curEle){
+     appcan.window.open({
+        name:"ContactMessage",
+        data:"ContactMessage.html"
+    });
+})*/
+    </script>
+  
+    </body>
+
+</html>

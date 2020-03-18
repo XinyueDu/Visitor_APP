@@ -1,0 +1,70 @@
+#Header {
+	color:rgba(255,255,255,1);
+	
+}
+#ScrollContent {
+	padding:2.69em 0em 0em 0em;
+}
+.uinn-at4{
+    padding: 2.69em 0.5em 0em !important;
+}
+.uinn-4a {
+    padding-top: 2.69em !important;
+}
+.uinn-a4{
+    padding:2.69em .5em 0 !important;
+}
+.uinn-busCon{
+	padding:0.4375em 0.625em;
+}
+.refresh{
+	background-image:url('myImg/refresh.png');
+}
+.c-gre-bus{
+	background-color:#f2ffe7;
+}
+.star1{
+	background-image:url('myImg/star1.png');
+}
+.star2{
+	background-image:url('myImg/star2.png');
+}
+.umar-r-busi{
+	margin-right:2px;
+}
+.uwh-busi{
+	width:4.1em;
+}
+.t-gra5{
+	color:#686868;
+}
+.uh-app1{
+	height:3.125em;
+}
+.uw-app2{
+	width:3.125em;
+}
+.uinn-a14{
+	padding:0.33em 0.5em 0.28em 0.5em;
+}
+.b-gre1{
+	border-color:#6cbd15;
+}
+.t-gre2{
+	color:#6cbd15;
+}
+.c-gre1{
+	background-color:#f2ffe7;
+}
+.uwh-icon1{
+	width:0.75em;
+	height:0.75em;
+}
+#footer{
+    margin-bottom: 0px;
+}
+#timg{
+    width: 60px;
+    height:60px;
+    /*background-image:url('./Image/t33.png');*/
+}
